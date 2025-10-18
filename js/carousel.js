@@ -1,41 +1,11 @@
-let carouselPositions = {
-    clients: 0,
-    partners: 0
-};
-
-function moveCarousel(carouselName, direction) {
-    const carousel = document.getElementById(`${carouselName}Carousel`);
-    const track = carousel.querySelector('.carousel-track');
-    const items = track.querySelectorAll('.carousel-item');
-    const itemWidth = items[0].offsetWidth;
-    const visibleItems = Math.floor(carousel.offsetWidth / itemWidth);
-    const maxPosition = items.length - visibleItems;
-
-    carouselPositions[carouselName] += direction;
-
-    if (carouselPositions[carouselName] < 0) {
-        carouselPositions[carouselName] = 0;
-    } else if (carouselPositions[carouselName] > maxPosition) {
-        carouselPositions[carouselName] = maxPosition;
-    }
-
-    const translateX = -carouselPositions[carouselName] * itemWidth;
-    track.style.transform = `translateX(${translateX}px)`;
-}
-
-function autoSlideCarousels() {
-    moveCarousel('clients', 1);
-    moveCarousel('partners', 1);
-}
-
-setInterval(autoSlideCarousels, 3000);
-
 let currentTestimonialSlide = 0;
 const testimonialTrack = document.querySelector('.testimonials-track');
 const testimonialCards = document.querySelectorAll('.testimonial-card');
 const dotsContainer = document.getElementById('testimonialDots');
 
 function createTestimonialDots() {
+    if (!dotsContainer || !testimonialCards.length) return;
+    
     const slidesCount = Math.ceil(testimonialCards.length / 4);
     for (let i = 0; i < slidesCount; i++) {
         const dot = document.createElement('div');
@@ -47,6 +17,8 @@ function createTestimonialDots() {
 }
 
 function updateTestimonialDots() {
+    if (!dotsContainer) return;
+    
     const dots = dotsContainer.querySelectorAll('.dot');
     dots.forEach((dot, index) => {
         dot.classList.toggle('active', index === currentTestimonialSlide);
@@ -54,8 +26,9 @@ function updateTestimonialDots() {
 }
 
 function moveTestimonials(direction) {
+    if (!testimonialTrack || !testimonialCards.length) return;
+    
     const cardWidth = testimonialCards[0].offsetWidth + 20;
-    const visibleCards = Math.floor(window.innerWidth / cardWidth);
     const slidesCount = Math.ceil(testimonialCards.length / 4);
     
     currentTestimonialSlide += direction;
@@ -72,6 +45,8 @@ function moveTestimonials(direction) {
 }
 
 function goToTestimonialSlide(slideIndex) {
+    if (!testimonialTrack || !testimonialCards.length) return;
+    
     const cardWidth = testimonialCards[0].offsetWidth + 20;
     currentTestimonialSlide = slideIndex;
     const translateX = -currentTestimonialSlide * (cardWidth * 4);
@@ -81,8 +56,8 @@ function goToTestimonialSlide(slideIndex) {
 
 if (dotsContainer) {
     createTestimonialDots();
+    
+    setInterval(() => {
+        moveTestimonials(1);
+    }, 6000);
 }
-
-setInterval(() => {
-    moveTestimonials(1);
-}, 5000);
