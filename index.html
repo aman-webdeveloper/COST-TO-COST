@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost To Cost - Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <h2>Cost To Cost</h2>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1>Your Trusted Partner in Technology Solutions</h1>
+                <p>From laptops to storage devices, we provide premium technology products at competitive prices. Experience excellence with Cost To Cost.</p>
+                <a href="products.html" class="btn btn-primary">Explore Products</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/modern_tech_shop_her_718dcadc.jpg" alt="Technology Solutions">
+            </div>
+        </div>
+    </section>
+
+    <section class="clients-section">
+        <div class="container">
+            <h2 class="section-title">Our Trusted Clients</h2>
+            <div class="carousel-container">
+                <button class="carousel-btn prev" onclick="moveCarousel('clients', -1)">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="carousel" id="clientsCarousel">
+                    <div class="carousel-track">
+                        <div class="carousel-item"><img src="images/technology_company_l_a47cf10b.jpg" alt="Client 1"></div>
+                        <div class="carousel-item"><img src="images/technology_company_l_33e3284e.jpg" alt="Client 2"></div>
+                        <div class="carousel-item"><img src="images/technology_company_l_4944f072.jpg" alt="Client 3"></div>
+                        <div class="carousel-item"><img src="images/technology_company_l_e6664ca7.jpg" alt="Client 4"></div>
+                        <div class="carousel-item"><img src="images/technology_company_l_9c4f8c01.jpg" alt="Client 5"></div>
+                        <div class="carousel-item"><img src="images/technology_company_l_cffd0fef.jpg" alt="Client 6"></div>
+                    </div>
+                </div>
+                <button class="carousel-btn next" onclick="moveCarousel('clients', 1)">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="partners-section">
+        <div class="container">
+            <h2 class="section-title">Our Trusted Partners</h2>
+            <div class="carousel-container">
+                <button class="carousel-btn prev" onclick="moveCarousel('partners', -1)">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="carousel" id="partnersCarousel">
+                    <div class="carousel-track">
+                        <div class="carousel-item"><img src="images/technology_company_l_cffd0fef.jpg" alt="Partner 1"></div>
+                        <div class="carousel-item"><img src="images/technology_company_l_9c4f8c01.jpg" alt="Partner 2"></div>
+                        <div class="carousel-item"><img src="images/technology_company_l_e6664ca7.jpg" alt="Partner 3"></div>
+                        <div class="carousel-item"><img src="images/technology_company_l_4944f072.jpg" alt="Partner 4"></div>
+                        <div class="carousel-item"><img src="images/technology_company_l_33e3284e.jpg" alt="Partner 5"></div>
+                        <div class="carousel-item"><img src="images/technology_company_l_a47cf10b.jpg" alt="Partner 6"></div>
+                    </div>
+                </div>
+                <button class="carousel-btn next" onclick="moveCarousel('partners', 1)">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="testimonials-carousel-container">
+                <button class="carousel-btn prev" onclick="moveTestimonials(-1)">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="testimonials-carousel" id="testimonialsCarousel">
+                    <div class="testimonials-track">
+                        <div class="testimonial-card">
+                            <img src="images/professional_busines_ef562d52.jpg" alt="Customer 1">
+                            <h4>John Smith</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"Excellent service and high-quality products. The team at Cost To Cost went above and beyond to meet our technology needs."</p>
+                        </div>
+                        <div class="testimonial-card">
+                            <img src="images/professional_busines_b12dc96d.jpg" alt="Customer 2">
+                            <h4>Sarah Johnson</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"Great experience! Fast delivery and professional support. I highly recommend Cost To Cost for all tech purchases."</p>
+                        </div>
+                        <div class="testimonial-card">
+                            <img src="images/professional_busines_ff03863b.jpg" alt="Customer 3">
+                            <h4>Michael Chen</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"Outstanding quality and competitive prices. Cost To Cost has become our go-to supplier for all technology equipment."</p>
+                        </div>
+                        <div class="testimonial-card">
+                            <img src="images/professional_busines_d721ec30.jpg" alt="Customer 4">
+                            <h4>Emily Davis</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"Incredible selection and knowledgeable staff. They helped us find exactly what we needed for our business."</p>
+                        </div>
+                        <div class="testimonial-card">
+                            <img src="images/professional_busines_9dd668e2.jpg" alt="Customer 5">
+                            <h4>David Wilson</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <p>"Very satisfied with the laptop I purchased. Good value for money and reliable after-sales support."</p>
+                        </div>
+                        <div class="testimonial-card">
+                            <img src="images/professional_busines_30eab762.jpg" alt="Customer 6">
+                            <h4>Lisa Anderson</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"Professional service from start to finish. The networking equipment we ordered works perfectly and was delivered on time."</p>
+                        </div>
+                        <div class="testimonial-card">
+                            <img src="images/professional_busines_d5b65bf4.jpg" alt="Customer 7">
+                            <h4>Robert Martinez</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"Best prices in the market! We've been buying from Cost To Cost for years and they never disappoint."</p>
+                        </div>
+                        <div class="testimonial-card">
+                            <img src="images/professional_busines_62750dce.jpg" alt="Customer 8">
+                            <h4>Jennifer Lee</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"The storage devices we purchased are top-notch quality. Customer service was exceptional and very responsive."</p>
+                        </div>
+                        <div class="testimonial-card">
+                            <img src="images/professional_busines_97a5c1b0.jpg" alt="Customer 9">
+                            <h4>William Brown</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <p>"Good experience overall. The printers we ordered met our expectations and setup was straightforward."</p>
+                        </div>
+                        <div class="testimonial-card">
+                            <img src="images/professional_busines_88117930.jpg" alt="Customer 10">
+                            <h4>Amanda Taylor</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"Highly professional team and quality products. We trust Cost To Cost for all our technology procurement needs."</p>
+                        </div>
+                        <div class="testimonial-card">
+                            <img src="images/professional_busines_ef562d52.jpg" alt="Customer 11">
+                            <h4>James Moore</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"Fantastic support and excellent product range. Cost To Cost has everything we need under one roof."</p>
+                        </div>
+                        <div class="testimonial-card">
+                            <img src="images/professional_busines_b12dc96d.jpg" alt="Customer 12">
+                            <h4>Patricia Garcia</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"Reliable, affordable, and professional. We couldn't ask for a better technology partner than Cost To Cost."</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn next" onclick="moveTestimonials(1)">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="carousel-dots" id="testimonialDots"></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-section">
+                <h3>Cost To Cost</h3>
+                <p>Your trusted partner for premium technology products and solutions.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="products.html#laptop">Laptops</a></li>
+                    <li><a href="products.html#printer">Printers</a></li>
+                    <li><a href="products.html#memory">Memory</a></li>
+                    <li><a href="products.html#networking">Networking</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                <p><i class="fas fa-envelope"></i> info@costtocost.com</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Cost To Cost. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
